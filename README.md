@@ -67,4 +67,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Executou-se o comando php artisan make:middleware ParentWithSchool para criações de Middleware.
 
-##
+## Criação do controller do Dashboard: php artisan make:controller DashboardController
