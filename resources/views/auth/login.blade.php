@@ -19,16 +19,17 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="../../index2.html" class="h1"><b>Login</b>QUINA</a>
+      <a href="../../index2.html" class="h1"><b>Login</b></a>
     </div>
     <div class="card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
+      @include('_message')
       <form action="{{ url('login') }}" method="post">
         @csrf 
 
         <div class="input-group mb-3">
-          <input type="email" class="form-control" name="name" placeholder="Email">
+          <input type="email" class="form-control" name="email" placeholder="Email">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -46,7 +47,7 @@
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
-              <input type="checkbox" id="remember">
+              <input type="checkbox" id="remember" name="remember">
               <label for="remember">
                 Remember Me
               </label>
